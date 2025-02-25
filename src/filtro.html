@@ -1,0 +1,44 @@
+<!-- Cambie las estructura de los archivos, para tener un orden y sea mas facil de encontrar los archivos si aumentan de tamaño -->
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambie "en" por "es" ya que es una pagina en español -->
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filtros en JS</title>
+
+  <!-- Enlace a la hoja de estilos -->
+  <link rel="stylesheet" href="./filtro.css">
+</head>
+
+<body>
+  <!-- Se agrego header, se movio el h1 del titulo al princio  -->
+  <header>
+    <h1>Lista de productos</h1>
+  </header>
+
+  <!--  Se agregaron etiquetas semanticas main y seccion-->
+  <main>
+    <!-- Se agrego seccion para el filtro -->
+    <section>
+      <!-- Se elimino div y se agrego form y label -->
+      <form action="" id="filtro-form">
+        <label for="filtro-input">Buscar por color o tipo:</label>
+        <input type="text" id="filtro-input" placeholder="Selecciona un color o tipo">
+        <!-- Agregue type="button" para evitar el submit por defecto y se agrega aria-label -->
+        <button type="button" aria-label="Filtrar productos">Filtrar</button>
+      </form>
+    </section>
+
+    <!-- Se agrego seccion  y se le paso el id del div para mostrar los productos y se elimino div, tambien el h1 se movio de lugar-->
+    <section id="lista-de-productos"></section>
+
+  </main>
+
+  <!-- Se ajusto la ruta para el script -->
+  <script src="filtro.js"></script>
+</body>
+
+</html>

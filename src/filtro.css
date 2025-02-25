@@ -1,11 +1,13 @@
+/* Se agregaron punto y coma faltantes */
 input {
   width: 500px;
   height: 40px;
   font-size: 18px;
 }
-
+/* Se añadio flex-wrap para que al haber muchos productos, estos se acomoden en varias lineas */
 #lista-de-productos {
-  display: flex
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .producto {
@@ -20,5 +22,5 @@ input {
 
 .producto img {
   width: 70%;
-  height: auto
+  height: auto;
 }
